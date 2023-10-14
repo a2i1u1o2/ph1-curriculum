@@ -1,0 +1,217 @@
+@media (max-width: 768px) {
+  .header {
+    padding: 0 12px;
+    height: 48px;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: solid 1px #eeeeee;
+    padding: 0 24px;
+    z-index: 10000;
+    /* ここを追記しましょう */
+    transition: background-color 0.3s linear;
+  }
+
+  .header-navItem {
+    text-align: center;
+  }
+
+  .header.is-transparent:not(.is-open) .header-buttonLine {
+    background-color: #ffffff;
+  }
+
+  .header-buttonLine {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #0071bc;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .header-buttonLine:nth-of-type(1) {
+    top: 13px;
+  }
+
+  .header-buttonLine:nth-of-type(2) {
+    top: 20px;
+  }
+
+  .header-buttonLine:nth-of-type(3) {
+    top: 27px;
+  }
+
+  .header-logo {
+    width: 100px;
+    z-index: 1;
+  }
+
+  .header-button {
+    width: 42px;
+    height: 42px;
+    position: relative;
+    margin-left: auto;
+    z-index: 1;
+  }
+
+  .header.is-open .header-nav {
+    visibility: visible;
+    opacity: 1;
+  }
+  .content {
+    height: 380px;
+    padding: 16px 12px;
+    background-image: url(../img/sp/bg-mainvisual.jpg);
+  }
+
+  .community {
+    font-size: 12px;
+    padding-left: 8px;
+    padding-right: 0px;
+  }
+
+  .peer {
+    font-size: 26px;
+    padding-left: 8px;
+  }
+
+  .posse-title {
+    gap: 8px;
+  }
+
+  .mainvisual-scroll {
+    display: none;
+  }
+
+  .wrapper {
+    padding: 40px 12px 80px;
+    gap: 80px;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  /* section {
+      padding-top: 48px;
+      margin-top: -48px;
+  } */
+
+  .main-title {
+    font-size: 24px;
+  }
+
+  .main-subtitle {
+    font-size: 10px;
+    margin-top: 4px;
+  }
+
+  /* About POSSE */
+  .about-posse {
+    display: block;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .posse-detail {
+    width: 100%;
+  }
+  .posse-img {
+    width: 100%;
+  }
+
+  /* Event */
+  .event-list {
+    justify-content: flex-start;
+  }
+
+  .event-itemImage img {
+    width: 200px;
+    height: 100%;
+  }
+
+  /* Daily */
+  .daily-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .daily-margin {
+    overflow: auto;
+  }
+  .daily-item {
+    flex-direction: column;
+    width: 320px;
+    flex-shrink: 0;
+  }
+  .daily-item:nth-of-type(odd) {
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+    margin-right: 0;
+    margin-left: 0px;
+  }
+  .daily-item:nth-of-type(even) {
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .daily-itemImage {
+    margin-top: 0;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 200px;
+  }
+  .daily-item:nth-of-type(odd) .daily-itemImage {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .daily-item:nth-of-type(even) .daily-itemImage {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .daily-itemBody {
+    padding: 20px 24px;
+  }
+  .daily-titleNumber {
+    font-size: 40px;
+  }
+  .daily-titleText {
+    font-size: 20px;
+    margin-left: 12px;
+  }
+  .daily-outline {
+    margin-top: 20px;
+  }
+  /* LINE */
+
+  .line-container {
+    background-image: url(../img/sp/bg-cta.jpg);
+    padding: 40px 12px 52px;
+    background-size: 100%;
+    height: 400px;
+  }
+  .line-title {
+    font-size: 24px;
+  }
+  .line-detail {
+    text-align: left;
+    /* width: 400px; */
+  }
+  .line-img-back {
+    display: none;
+  }
+
+  .footer-container {
+    text-align: center;
+  }
+  .footer-logo img {
+    width: 160px;
+  }
